@@ -25,7 +25,7 @@ const UpdateUser = () => {
   });
   const [updateUser, { loading: updatingUser }] = useMutation(UPDATE_USER, {
     onCompleted: (res) =>
-      notifySuccess(`Utilisateur modifié ! ${res.updateUser.message}`),
+      notifySuccess(`Utilisateur modifié ! ${res.updateUser.message || ""}`),
     onError: (error) => notifyFailure(error.message),
   });
 
