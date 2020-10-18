@@ -15,7 +15,7 @@ const schema = yup.object().shape({
   firstName: yup.string().required("Prénom obligatoire"),
   lastName: yup.string().required("Nom obligatoire"),
   email: yup.string().required("Email obligatoire"),
-  role: yup.string().ensure().required("Rôle obligatoire"),
+  role: yup.string().required("Rôle obligatoire"),
 });
 
 const UpdateUser = () => {
@@ -65,7 +65,7 @@ const UpdateUser = () => {
         submit={async (formData) =>
           updateUser({ variables: { ...formData, id: data.user._id } })
         }
-        loading={updatingUser}
+        isLoading={updatingUser}
         defaultValues={data.user}
         fields={fields}
         submitLabel="Modifier"

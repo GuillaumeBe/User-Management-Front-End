@@ -12,7 +12,7 @@ const schema = yup.object().shape({
   firstName: yup.string().required("Prénom obligatoire"),
   lastName: yup.string().required("Nom obligatoire"),
   email: yup.string().required("Email obligatoire"),
-  role: yup.string().ensure().required("Rôle obligatoire"),
+  role: yup.string().required("Rôle obligatoire"),
 });
 
 const CreateUser = () => {
@@ -67,7 +67,7 @@ const CreateUser = () => {
         title="Créer un utilisateur"
         schema={schema}
         submit={async (formData) => createUser({ variables: formData })}
-        loading={loading}
+        isLoading={loading}
         fields={fields}
         submitLabel="Créer"
       />

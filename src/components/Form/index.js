@@ -12,7 +12,7 @@ import { StyledForm, Buttons } from "./style.js";
 const Form = ({
   schema,
   submit,
-  loading,
+  isLoading,
   title,
   fields,
   submitLabel,
@@ -50,7 +50,7 @@ const Form = ({
             Précédent
           </Button>
         </Link>
-        <Button type="submit" isLoading={loading}>
+        <Button type="submit" isLoading={isLoading}>
           {submitLabel}
         </Button>
       </Buttons>

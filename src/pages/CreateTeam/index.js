@@ -127,7 +127,7 @@ const CreateTeam = () => {
         title="Créer une équipe"
         schema={schema}
         submit={async (formData) => createTeam({ variables: formData })}
-        loading={creatingTeam}
+        isLoading={creatingTeam}
         fields={fields}
         submitLabel="Créer"
       />
