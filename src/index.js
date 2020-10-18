@@ -16,7 +16,10 @@ const theme = {
 };
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000",
+  uri:
+    process.env.NODE_ENV === "production"
+      ? "https://user-management-server.herokuapp.com/"
+      : process.env.NODE_ENV === "development" && "http://localhost:4000",
   cache: new InMemoryCache(),
 });
 
