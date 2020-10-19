@@ -6,6 +6,7 @@ export const Container = styled.div`
   place-items: center;
   height: 100%;
   gap:1rem;
+  padding:1rem;
 `;
 
 export const Card = styled.div`
