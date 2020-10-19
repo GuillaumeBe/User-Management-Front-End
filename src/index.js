@@ -6,6 +6,7 @@ import { ThemeProvider } from "styled-components";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import GlobalStyle from "./components/GlobalStyle";
+import "./index.css";
 
 const theme = {
   primaryColor: "#22223b",
