@@ -5,6 +5,7 @@ export const Container = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   place-items: center;
   height: 100%;
+  gap:1rem;
 `;
 
 export const Card = styled.div`
@@ -19,6 +20,6 @@ export const Card = styled.div`
   font-weight: bold;
 
   :hover {
-    margin-bottom: 2rem;
+    transform:translateY(-2rem);
   }
 `;
