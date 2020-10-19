@@ -4,8 +4,8 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   place-items: center;
-  height: 100%;
-  gap:1rem;
+  min-height: 100%;
+  gap: 1rem;
   padding:1rem;
 `;
 

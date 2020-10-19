@@ -33,7 +33,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	background-color:${(props) => props.theme.lightPrimaryColor};
-	height: 100%;
 	font-family: 'Roboto';
 }
 ol, ul {
@@ -51,8 +50,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html,
-#root {
+html, body, #root {
   height: 100%;
 }
 `;
