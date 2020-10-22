@@ -95,7 +95,7 @@ const Table = ({ columns, data, title, subtitle, onRowClick }) => {
           <span>
             Page{" "}
             <strong>
-              {pageIndex + 1} sur {pageOptions.length}
+              {pageIndex + 1} sur {pageOptions.length || 1}
             </strong>{" "}
           </span>
           <StyledButton onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
