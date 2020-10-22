@@ -88,6 +88,6 @@ export const Pagination = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
+  flex-wrap:wrap;
 `;
