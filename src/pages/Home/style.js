@@ -5,8 +5,8 @@ export const Container = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   place-items: center;
   min-height: 100%;
-  gap: 1rem;
-  padding:1rem;
+  gap: 2rem;
+  padding:2rem;
 `;
 
 export const Card = styled.div`
@@ -21,6 +21,6 @@ export const Card = styled.div`
   font-weight: bold;
 
   :hover {
-    transform:translateY(-2rem);
+    transform:translateY(-1rem);
   }
 `;
