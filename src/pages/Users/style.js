@@ -3,5 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: grid;
   place-items: center;
-  height: 100%;
+  min-height: 100%;
+  padding: 2rem;  
+  box-sizing: border-box;
+
 `;

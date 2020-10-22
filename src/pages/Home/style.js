@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   place-items: center;
   min-height: 100%;
   gap: 2rem;
   padding:2rem;
+  box-sizing: border-box;
 `;
 
 export const Card = styled.div`

@@ -14,11 +14,22 @@ export const StyledTable = styled.table`
 export const THead = styled.thead`
   background-color: ${(props) => props.theme.primaryColor};
   color: white;
+
+  @media (max-width: 700px){
+    display: none;
+  }
+
 `;
 
 export const TBody = styled.tbody``;
 
 export const TR = styled.tr`
+
+@media (max-width: 700px){
+  display: block;
+  margin-bottom: 2rem;
+}
+
   ${({ isClickable }) =>
     isClickable &&
     css`
@@ -29,12 +40,38 @@ export const TR = styled.tr`
 export const TH = styled.th`
   padding: 1.2rem 1rem;
   text-align: left;
+
+  @media (max-width: 700px){
+    display: block;
+    margin-bottom: 4rem;
+  }
 `;
 
 export const TD = styled.td`
-  padding: 0.5rem 1rem;
   vertical-align: middle;
-  height: 3rem;
+
+  @media (min-width: 700px){
+    height: 3rem;
+    padding: 0.5rem 1rem;
+
+  }
+
+  @media (max-width: 700px){
+    display: block;
+    text-align: right;
+    padding: 0.5rem 0rem;
+
+    :before {
+      float: left;
+      font-weight: bold;
+      }
+
+      :nth-of-type(1):before { content: "Prénom"; }
+	    :nth-of-type(2):before { content: "Nom"; }
+	    :nth-of-type(3):before { content: "Email"; }
+	    :nth-of-type(4):before { content: "Rôle"; }
+  }
+
 `;
 
 export const StyledButton = styled.button`
@@ -51,5 +88,6 @@ export const Pagination = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 `;
